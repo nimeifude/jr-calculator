@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mortgage Calculator | Monthly Payment & Interest</title>
+    <meta name="description" content="Estimate monthly mortgage payments, loan amount, total interest, property tax, insurance, and long-term home loan cost.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="Mortgage Calculator">
+    <meta property="og:description" content="Calculate monthly mortgage payments with home price, down payment, rate, tax, and insurance.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/financial-calculators-hero.png">
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="interest-calculator.html">Interest</a>
+        <a aria-current="page" href="mortgage-calculator.html">Mortgage</a>
+        <a href="exchange-rate-calculator.html">Exchange</a>
+        <a href="retirement-savings-calculator.html">Retirement</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">Home loan planning</p>
+        <h1>Mortgage Calculator</h1>
+        <p>Estimate monthly principal and interest, add property tax and insurance, and compare the true cost of a mortgage over time.</p>
+      </section>
+
+      <section class="calculator-layout">
+        <article class="tool-shell standalone" aria-labelledby="mortgage-title">
+          <div class="panel-head">
+            <div>
+              <h2 id="mortgage-title">Calculate a mortgage payment</h2>
+              <p>Use home price, down payment, rate, term, taxes, and insurance to estimate monthly cost.</p>
+            </div>
+          </div>
+          <form class="calculator-grid" data-calculator="mortgage">
+            <div class="form-section-title">Loan details</div>
+            <label>Home price<input name="price" type="number" min="0" step="1000" value="400000" inputmode="decimal"></label>
+            <label>Down payment<input name="down" type="number" min="0" step="1000" value="80000" inputmode="decimal"></label>
+            <label>Annual rate (%)<input name="rate" type="number" step="0.01" value="6.5" inputmode="decimal"></label>
+            <label>Loan term (years)<input name="years" type="number" min="1" step="1" value="30" inputmode="numeric"></label>
+            <div class="form-section-title">Taxes and fees</div>
+            <label>Property tax / year<input name="tax" type="number" min="0" step="100" value="4200" inputmode="decimal"></label>
+            <label>Insurance / year<input name="insurance" type="number" min="0" step="100" value="1200" inputmode="decimal"></label>
+            <label>HOA / month<input name="hoa" type="number" min="0" step="10" value="150" inputmode="decimal"></label>
+            <label>PMI (% / year)<input name="pmi" type="number" min="0" step="0.01" value="0.35" inputmode="decimal"></label>
+            <label>Closing costs<input name="closing" type="number" min="0" step="100" value="9000" inputmode="decimal"></label>
+            <div class="form-section-title">Extra payments</div>
+            <label>Extra payment / month<input name="extraMonthly" type="number" min="0" step="50" value="0" inputmode="decimal"></label>
+            <label>Extra payment / year<input name="extraAnnual" type="number" min="0" step="100" value="0" inputmode="decimal"></label>
+            <label>One-time extra payment<input name="extraOneTime" type="number" min="0" step="100" value="0" inputmode="decimal"></label>
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card" data-result="mortgage-payment"><span>Monthly payment</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="mortgage-pi"><span>Principal & interest</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="mortgage-interest"><span>Total interest</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="mortgage-loan"><span>Loan amount</span><strong>$0</strong></output>
+            <output class="result-card" data-result="mortgage-cash"><span>Cash to close</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="mortgage-payoff"><span>Payoff time</span><strong>0</strong></output>
+            <output class="result-card muted" data-result="mortgage-saved"><span>Interest saved</span><strong>$0</strong></output>
+          </div>
+        </article>
+
+        <aside class="side-panel">
+          <h2>What is included?</h2>
+          <p>The payment includes principal and interest plus estimated monthly property tax and insurance.</p>
+          <p>It does not include HOA fees, mortgage insurance, closing costs, or local fees.</p>
+        </aside>
+      </section>
+
+      <section class="amortization-section">
+        <div class="amortization-head">
+          <h2>Amortization schedule</h2>
+          <p>Year-by-year principal, interest, extra payment, and remaining balance.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="amortization-table">
+            <thead>
+              <tr><th>Year</th><th>Principal</th><th>Interest</th><th>Extra</th><th>Balance</th></tr>
+            </thead>
+            <tbody data-amortization-body></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2>How mortgage payments are calculated</h2>
+        <p>The calculator uses the standard amortization formula for fixed-rate loans. The loan amount is the home price minus the down payment. A longer term usually lowers the monthly payment but increases total interest.</p>
+        <h2>How to compare mortgage scenarios</h2>
+        <p>Try changing the down payment, rate, and term one at a time. This makes it easier to see which factor has the biggest effect on affordability.</p>
+        <div class="related-links">
+          <a href="interest-calculator.html">Interest calculator</a>
+          <a href="retirement-savings-calculator.html">Retirement savings calculator</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Financial Calculators</span><span>Mortgage estimates for planning.</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

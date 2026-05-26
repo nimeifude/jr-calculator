@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Retirement Savings Calculator | United States</title>
+    <meta name="description" content="Retirement Savings Calculator for United States: detailed local-market inputs, estimates, and planning notes.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="Retirement Savings Calculator | United States">
+    <meta property="og:description" content="Retirement Savings Calculator for United States: detailed local-market inputs, estimates, and planning notes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../assets/financial-calculators-hero.png">
+    <link rel="icon" href="../assets/favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://www.your-domain.com/en-us/retirement-calculator.html">
+    <link rel="alternate" hreflang="en-US" href="https://www.your-domain.com/en-us/">
+    <link rel="alternate" hreflang="es-MX" href="https://www.your-domain.com/es-mx/">
+    <link rel="alternate" hreflang="de-DE" href="https://www.your-domain.com/de-de/">
+    <link rel="alternate" hreflang="ja-JP" href="https://www.your-domain.com/ja-jp/">
+    <link rel="alternate" hreflang="fr-FR" href="https://www.your-domain.com/fr-fr/">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-currency="USD">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="../assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a  href="index.html">Home</a>
+        <a  href="interest-calculator.html">Interest Calculator</a>
+        <a  href="mortgage-calculator.html">Mortgage Calculator</a>
+        <a  href="exchange-calculator.html">Exchange Rate Calculator</a>
+        <a aria-current="page" href="retirement-calculator.html">Retirement Savings Calculator</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">United States</p>
+        <h1>Retirement Savings Calculator</h1>
+        <p>Retirement Savings Calculator for United States: detailed local-market inputs, estimates, and planning notes.</p>
+      </section>
+      <section class="calculator-layout">
+        <article class="tool-shell standalone">
+          <div class="panel-head"><div><h2>Retirement Savings Calculator</h2><p>US-focused calculators for APY growth, monthly mortgage payments, currency conversion costs, and retirement savings.</p></div></div>
+          <form class="calculator-grid" data-calculator="retirement">
+
+            <label>Current savings<input name="current" type="number" value="65000" min="0" step="100"></label>
+            <label>Monthly contribution<input name="monthly" type="number" value="900" min="0" step="50"></label>
+            <label>Annual return (%)<input name="return" type="number" value="6.5" step="0.01"></label>
+            <label>Years<input name="years" type="number" value="10" min="0" step="1"></label>
+            <label>Inflation (%)<input name="inflation" type="number" value="2.8" step="0.01"></label>
+            <label>Target retirement income / year<input name="income" type="number" value="85000" min="0" step="100"></label>
+            <label>Withdrawal rate (%)<input name="withdrawal" type="number" value="4" min="0.1" step="0.1"></label>
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card " data-result="retirement-future"><span>Future value</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="retirement-today"><span>Today's value</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="retirement-contrib"><span>Total contributed</span><strong>$0</strong></output>
+            <output class="result-card " data-result="retirement-target"><span>Target nest egg</span><strong>$0</strong></output>
+            <output class="result-card " data-result="retirement-gap"><span>Gap or surplus</span><strong>$0</strong></output>
+          </div>
+        </article>
+        <aside class="side-panel"><h2>United States</h2><p>US mortgages often include property tax, homeowners insurance, HOA fees, and sometimes PMI.</p><p>Retirement planning commonly compares 401(k), IRA, taxable savings, Social Security expectations, and healthcare costs.</p></aside>
+      </section>
+      
+      <section class="article-section">
+        <h2>Retirement Savings Calculator guide</h2>
+        <p>Adjust each input to compare realistic scenarios for United States. Keep fees, taxes, inflation, provider charges, and local rules separate when possible.</p>
+        <h2>Important limitation</h2>
+        <p>This calculator is designed for planning and SEO content coverage. It does not replace licensed financial, tax, mortgage, or investment advice.</p>
+        <div class="related-links"><a href="interest-calculator.html">Interest Calculator</a><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="exchange-calculator.html">Exchange Rate Calculator</a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Financial Calculators</span><span>United States</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

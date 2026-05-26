@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tax Calculator | México</title>
+    <meta name="description" content="Add or remove sales tax, VAT, GST, or consumption tax from an amount.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="icon" href="../assets/favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://www.your-domain.com/es-mx/tax-calculator.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-currency="MXN">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="../assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="interest-calculator.html">Interest</a>
+        <a aria-current="page" href="tax-calculator.html">Tax</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">México</p>
+        <h1>Tax Calculator</h1>
+        <p>Add or remove sales tax, VAT, GST, or consumption tax from an amount.</p>
+      </section>
+      <section class="calculator-layout">
+        <article class="tool-shell standalone">
+          <div class="panel-head"><div><h2>Tax Calculator</h2><p>Enter your assumptions and compare the estimate instantly.</p></div></div>
+          <form class="calculator-grid" data-calculator="tax">
+            <label>Amount<input name="amount" type="number" value="1000" step="0.01"></label>
+            <label>Tax rate (%)<input name="rate" type="number" value="8.25" step="0.01"></label>
+            <label class="check-row"><input name="included" type="checkbox">Amount includes tax</label>
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card " data-result="tax-before"><span>Before tax</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="tax-tax"><span>Tax amount</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="tax-total"><span>Total</span><strong>$0</strong></output>
+          </div>
+        </article>
+        <aside class="side-panel"><h2>México</h2><p>This calculator is a planning estimate. Local taxes, fees, lender rules, inflation, and provider terms can change the real result.</p><p>Use it to compare scenarios before making a financial decision.</p></aside>
+      </section>
+      <section class="article-section">
+        <h2>How to use this calculator</h2>
+        <p>Adjust the inputs and review the result cards. For precise quotes, compare the estimate with local rules, providers, and professional advice.</p>
+        <div class="related-links"><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="interest-calculator.html">Interest Calculator</a><a href="retirement-calculator.html">Retirement Calculator</a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Financial Calculators</span><span>México</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

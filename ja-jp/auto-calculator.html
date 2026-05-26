@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auto Loan Calculator | 日本</title>
+    <meta name="description" content="Estimate car loan payments including down payment, trade-in value, tax, and fees.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="icon" href="../assets/favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://www.your-domain.com/ja-jp/auto-calculator.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-currency="JPY">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="../assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="interest-calculator.html">Interest</a>
+        <a aria-current="page" href="auto-calculator.html">Auto Loan</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">日本</p>
+        <h1>Auto Loan Calculator</h1>
+        <p>Estimate car loan payments including down payment, trade-in value, tax, and fees.</p>
+      </section>
+      <section class="calculator-layout">
+        <article class="tool-shell standalone">
+          <div class="panel-head"><div><h2>Auto Loan Calculator</h2><p>Enter your assumptions and compare the estimate instantly.</p></div></div>
+          <form class="calculator-grid" data-calculator="auto">
+            <label>Car price<input name="price" type="number" value="35000" step="0.01"></label>
+            <label>Down payment<input name="down" type="number" value="5000" step="0.01"></label>
+            <label>Trade-in value<input name="trade" type="number" value="2000" step="0.01"></label>
+            <label>Sales tax (%)<input name="tax" type="number" value="7" step="0.01"></label>
+            <label>Fees<input name="fees" type="number" value="600" step="0.01"></label>
+            <label>Annual rate (%)<input name="rate" type="number" value="7.5" step="0.01"></label>
+            <label>Months<input name="months" type="number" value="60" step="0.01"></label>
+            
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card " data-result="auto-payment"><span>Monthly payment</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="auto-loan"><span>Amount financed</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="auto-interest"><span>Total interest</span><strong>$0</strong></output>
+          </div>
+        </article>
+        <aside class="side-panel"><h2>日本</h2><p>This calculator is a planning estimate. Local taxes, fees, lender rules, inflation, and provider terms can change the real result.</p><p>Use it to compare scenarios before making a financial decision.</p></aside>
+      </section>
+      <section class="article-section">
+        <h2>How to use this calculator</h2>
+        <p>Adjust the inputs and review the result cards. For precise quotes, compare the estimate with local rules, providers, and professional advice.</p>
+        <div class="related-links"><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="interest-calculator.html">Interest Calculator</a><a href="retirement-calculator.html">Retirement Calculator</a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Financial Calculators</span><span>日本</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

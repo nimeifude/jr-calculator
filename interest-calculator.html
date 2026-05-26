@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interest Calculator | Simple & Compound Interest</title>
+    <meta name="description" content="Use this free interest calculator to estimate simple interest, compound interest, future value, and total interest earned over time.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="Interest Calculator">
+    <meta property="og:description" content="Calculate simple or compound interest with principal, rate, years, and compounding frequency.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/financial-calculators-hero.png">
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a aria-current="page" href="interest-calculator.html">Interest</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="exchange-rate-calculator.html">Exchange</a>
+        <a href="retirement-savings-calculator.html">Retirement</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">Simple and compound interest</p>
+        <h1>Interest Calculator</h1>
+        <p>Estimate how money can grow over time based on principal, annual interest rate, investment period, and compounding frequency.</p>
+      </section>
+
+      <section class="calculator-layout">
+        <article class="tool-shell standalone" aria-labelledby="interest-title">
+          <div class="panel-head">
+            <div>
+              <h2 id="interest-title">Calculate interest growth</h2>
+              <p>Switch between compound and simple interest for savings, deposits, or investment scenarios.</p>
+            </div>
+          </div>
+          <form class="calculator-grid" data-calculator="interest">
+            <label>Principal<input name="principal" type="number" min="0" step="0.01" value="10000" inputmode="decimal"></label>
+            <label>Annual rate (%)<input name="rate" type="number" step="0.01" value="5" inputmode="decimal"></label>
+            <label>Years<input name="years" type="number" min="0" step="0.5" value="10" inputmode="decimal"></label>
+            <label>Monthly contribution<input name="contribution" type="number" min="0" step="0.01" value="250" inputmode="decimal"></label>
+            <label>
+              Compound frequency
+              <select name="frequency">
+                <option value="1">Annually</option>
+                <option value="4">Quarterly</option>
+                <option value="12" selected>Monthly</option>
+                <option value="365">Daily</option>
+              </select>
+            </label>
+            <label class="check-row"><input name="simple" type="checkbox">Use simple interest</label>
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card" data-result="interest-total"><span>Future value</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="interest-earned"><span>Interest earned</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="interest-contributed"><span>Total contributed</span><strong>$0</strong></output>
+          </div>
+        </article>
+
+        <aside class="side-panel">
+          <h2>Formula</h2>
+          <p>Compound interest: A = P(1 + r/n)<sup>nt</sup></p>
+          <p>Simple interest: A = P(1 + rt)</p>
+          <p>P is principal, r is annual rate, n is compounding periods per year, and t is years.</p>
+        </aside>
+      </section>
+
+      <section class="article-section">
+        <h2>How to use the interest calculator</h2>
+        <p>Enter the starting amount, annual percentage rate, and number of years. Choose monthly, quarterly, annual, or daily compounding. If you only want simple interest, select the simple interest option.</p>
+        <h2>When compound interest matters</h2>
+        <p>Compounding becomes more important over longer time periods. Even small rate changes can produce a large difference when interest is reinvested and earns additional interest.</p>
+        <div class="related-links">
+          <a href="mortgage-calculator.html">Mortgage calculator</a>
+          <a href="retirement-savings-calculator.html">Retirement savings calculator</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Financial Calculators</span><span>Interest estimates for planning.</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

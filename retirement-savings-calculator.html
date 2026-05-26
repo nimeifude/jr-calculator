@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Retirement Savings Calculator | Future Value & Inflation</title>
+    <meta name="description" content="Estimate retirement savings from current balance, monthly contributions, annual return, years to retirement, and inflation.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="Retirement Savings Calculator">
+    <meta property="og:description" content="Project future savings and inflation-adjusted retirement value.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/financial-calculators-hero.png">
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="interest-calculator.html">Interest</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="exchange-rate-calculator.html">Exchange</a>
+        <a aria-current="page" href="retirement-savings-calculator.html">Retirement</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">Long-term savings</p>
+        <h1>Retirement Savings Calculator</h1>
+        <p>Project future savings from your current balance, monthly contributions, expected return, time horizon, and inflation assumption.</p>
+      </section>
+
+      <section class="calculator-layout">
+        <article class="tool-shell standalone" aria-labelledby="retirement-title">
+          <div class="panel-head">
+            <div>
+              <h2 id="retirement-title">Calculate retirement savings</h2>
+              <p>Estimate both future dollars and inflation-adjusted purchasing power.</p>
+            </div>
+          </div>
+          <form class="calculator-grid" data-calculator="retirement">
+            <label>Current savings<input name="current" type="number" min="0" step="100" value="50000" inputmode="decimal"></label>
+            <label>Monthly contribution<input name="monthly" type="number" min="0" step="50" value="800" inputmode="decimal"></label>
+            <label>Annual return (%)<input name="return" type="number" step="0.01" value="6" inputmode="decimal"></label>
+            <label>Years until retirement<input name="years" type="number" min="0" step="1" value="25" inputmode="numeric"></label>
+            <label>Inflation (%)<input name="inflation" type="number" step="0.01" value="2.5" inputmode="decimal"></label>
+            <label>Target retirement income / year<input name="income" type="number" min="0" step="100" value="85000" inputmode="decimal"></label>
+            <label>Withdrawal rate (%)<input name="withdrawal" type="number" min="0.1" step="0.1" value="4" inputmode="decimal"></label>
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card" data-result="retirement-future"><span>Future savings</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="retirement-today"><span>Today's value</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="retirement-contrib"><span>Total contributions</span><strong>$0</strong></output>
+            <output class="result-card" data-result="retirement-target"><span>Target nest egg</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="retirement-gap"><span>Gap or surplus</span><strong>$0</strong></output>
+          </div>
+        </article>
+
+        <aside class="side-panel">
+          <h2>Planning note</h2>
+          <p>Future savings show the nominal account value. Today's value adjusts that result for inflation to estimate purchasing power.</p>
+          <p>Returns are simplified and do not include taxes, account fees, or market volatility.</p>
+        </aside>
+      </section>
+
+      <section class="article-section">
+        <h2>How retirement savings projections work</h2>
+        <p>The calculator compounds the current savings and adds monthly contributions over the full time horizon. Inflation is then used to estimate what the projected balance may feel like in today's dollars.</p>
+        <h2>How to improve a retirement projection</h2>
+        <p>Compare several annual return and inflation assumptions. Also test contribution increases, later retirement dates, or larger starting balances to see how each lever affects the result.</p>
+        <div class="related-links">
+          <a href="interest-calculator.html">Interest calculator</a>
+          <a href="mortgage-calculator.html">Mortgage calculator</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Financial Calculators</span><span>Retirement estimates for planning.</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

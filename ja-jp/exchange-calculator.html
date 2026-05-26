@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>為替計算機 | 日本</title>
+    <meta name="description" content="為替計算機 for 日本: detailed local-market inputs, estimates, and planning notes.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="為替計算機 | 日本">
+    <meta property="og:description" content="為替計算機 for 日本: detailed local-market inputs, estimates, and planning notes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../assets/financial-calculators-hero.png">
+    <link rel="icon" href="../assets/favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://www.your-domain.com/ja-jp/exchange-calculator.html">
+    <link rel="alternate" hreflang="en-US" href="https://www.your-domain.com/en-us/">
+    <link rel="alternate" hreflang="es-MX" href="https://www.your-domain.com/es-mx/">
+    <link rel="alternate" hreflang="de-DE" href="https://www.your-domain.com/de-de/">
+    <link rel="alternate" hreflang="ja-JP" href="https://www.your-domain.com/ja-jp/">
+    <link rel="alternate" hreflang="fr-FR" href="https://www.your-domain.com/fr-fr/">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-currency="JPY">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="../assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a  href="index.html">ホーム</a>
+        <a  href="interest-calculator.html">利息計算機</a>
+        <a  href="mortgage-calculator.html">住宅ローン計算機</a>
+        <a aria-current="page" href="exchange-calculator.html">為替計算機</a>
+        <a  href="retirement-calculator.html">老後資金計算機</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">日本</p>
+        <h1>為替計算機</h1>
+        <p>為替計算機 for 日本: detailed local-market inputs, estimates, and planning notes.</p>
+      </section>
+      <section class="calculator-layout">
+        <article class="tool-shell standalone">
+          <div class="panel-head"><div><h2>為替計算機</h2><p>日本市場向けの利息、住宅ローン、為替、老後資金シミュレーターです。</p></div></div>
+          <form class="calculator-grid" data-calculator="currency">
+
+            <label>金額<input name="amount" type="number" value="1000" min="0" step="0.01"></label>
+            <label>変換元<select name="from"></select></label>
+            <label>変換先<select name="to"></select></label>
+            <label>為替レート入力<input name="rate" type="number" min="0" step="0.000001"></label>
+            <label>手数料<input name="fee" type="number" value="0" min="0" step="0.01"></label>
+            <label>スプレッド (%)<input name="spread" type="number" value="0.5" min="0" step="0.01"></label>
+            <p class="field-note">Use a live quote for exact execution. Built-in rates are planning examples.</p>
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card " data-result="currency-total"><span>換算額</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="currency-rate"><span>Rate</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="currency-cost"><span>推定コスト</span><strong>$0</strong></output>
+          </div>
+        </article>
+        <aside class="side-panel"><h2>日本</h2><p>日本の住宅ローンでは変動金利、固定金利、団信、保証料、管理費を分けて確認すると比較しやすくなります。</p><p>老後資金は公的年金、iDeCo、NISA、生活費、医療費を分けて考えると現実的です。</p></aside>
+      </section>
+      
+      <section class="article-section">
+        <h2>為替計算機 guide</h2>
+        <p>Adjust each input to compare realistic scenarios for 日本. Keep fees, taxes, inflation, provider charges, and local rules separate when possible.</p>
+        <h2>Important limitation</h2>
+        <p>This calculator is designed for planning and SEO content coverage. It does not replace licensed financial, tax, mortgage, or investment advice.</p>
+        <div class="related-links"><a href="interest-calculator.html">利息計算機</a><a href="mortgage-calculator.html">住宅ローン計算機</a><a href="retirement-calculator.html">老後資金計算機</a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Financial Calculators</span><span>日本</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

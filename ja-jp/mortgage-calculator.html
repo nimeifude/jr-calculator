@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja-JP">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>住宅ローン計算機 | 日本</title>
+    <meta name="description" content="住宅ローン計算機 for 日本: detailed local-market inputs, estimates, and planning notes.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:title" content="住宅ローン計算機 | 日本">
+    <meta property="og:description" content="住宅ローン計算機 for 日本: detailed local-market inputs, estimates, and planning notes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../assets/financial-calculators-hero.png">
+    <link rel="icon" href="../assets/favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://www.your-domain.com/ja-jp/mortgage-calculator.html">
+    <link rel="alternate" hreflang="en-US" href="https://www.your-domain.com/en-us/">
+    <link rel="alternate" hreflang="es-MX" href="https://www.your-domain.com/es-mx/">
+    <link rel="alternate" hreflang="de-DE" href="https://www.your-domain.com/de-de/">
+    <link rel="alternate" hreflang="ja-JP" href="https://www.your-domain.com/ja-jp/">
+    <link rel="alternate" hreflang="fr-FR" href="https://www.your-domain.com/fr-fr/">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-currency="JPY">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="../assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a  href="index.html">ホーム</a>
+        <a  href="interest-calculator.html">利息計算機</a>
+        <a aria-current="page" href="mortgage-calculator.html">住宅ローン計算機</a>
+        <a  href="exchange-calculator.html">為替計算機</a>
+        <a  href="retirement-calculator.html">老後資金計算機</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">日本</p>
+        <h1>住宅ローン計算機</h1>
+        <p>住宅ローン計算機 for 日本: detailed local-market inputs, estimates, and planning notes.</p>
+      </section>
+      <section class="calculator-layout">
+        <article class="tool-shell standalone">
+          <div class="panel-head"><div><h2>住宅ローン計算機</h2><p>日本市場向けの利息、住宅ローン、為替、老後資金シミュレーターです。</p></div></div>
+          <form class="calculator-grid" data-calculator="mortgage">
+
+            <div class="form-section-title">ローン条件</div>
+            <label>物件価格<input name="price" type="number" value="52000000" min="0" step="1000"></label>
+            <label>頭金<input name="down" type="number" value="10000000" min="0" step="1000"></label>
+            <label>年利 (%)<input name="rate" type="number" value="1.2" step="0.01"></label>
+            <label>返済期間（年）<input name="years" type="number" value="30" min="1" step="1"></label>
+            <div class="form-section-title">税金と費用</div>
+            <label>固定資産税 / 年<input name="tax" type="number" value="160000" min="0" step="100"></label>
+            <label>保険料 / 年<input name="insurance" type="number" value="80000" min="0" step="100"></label>
+            <label>管理費 / 月<input name="hoa" type="number" value="18000" min="0" step="10"></label>
+            <label>保証料率 (% / 年)<input name="pmi" type="number" value="0" min="0" step="0.01"></label>
+            <label>諸費用<input name="closing" type="number" value="2500000" min="0" step="100"></label>
+            <div class="form-section-title">追加返済</div>
+            <label>毎月の追加返済<input name="extraMonthly" type="number" value="0" min="0" step="50"></label>
+            <label>毎年の追加返済<input name="extraAnnual" type="number" value="0" min="0" step="100"></label>
+            <label>一回限りの追加返済<input name="extraOneTime" type="number" value="0" min="0" step="100"></label>
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card " data-result="mortgage-payment"><span>月々返済額</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="mortgage-pi"><span>元利返済</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="mortgage-interest"><span>利息総額</span><strong>$0</strong></output>
+            <output class="result-card " data-result="mortgage-loan"><span>借入額</span><strong>$0</strong></output>
+            <output class="result-card " data-result="mortgage-cash"><span>初期費用</span><strong>$0</strong></output>
+            <output class="result-card " data-result="mortgage-payoff"><span>完済期間</span><strong>$0</strong></output>
+            <output class="result-card " data-result="mortgage-saved"><span>節約利息</span><strong>$0</strong></output>
+          </div>
+        </article>
+        <aside class="side-panel"><h2>日本</h2><p>日本の住宅ローンでは変動金利、固定金利、団信、保証料、管理費を分けて確認すると比較しやすくなります。</p><p>老後資金は公的年金、iDeCo、NISA、生活費、医療費を分けて考えると現実的です。</p></aside>
+      </section>
+      <section class="amortization-section"><div class="amortization-head"><h2>返済予定表</h2><p>追加返済を含む年次シミュレーションです。</p></div><div class="table-wrap"><table class="amortization-table"><thead><tr><th>年</th><th>元金</th><th>利息</th><th>追加</th><th>残高</th></tr></thead><tbody data-amortization-body></tbody></table></div></section>
+      <section class="article-section">
+        <h2>住宅ローン計算機 guide</h2>
+        <p>Adjust each input to compare realistic scenarios for 日本. Keep fees, taxes, inflation, provider charges, and local rules separate when possible.</p>
+        <h2>Important limitation</h2>
+        <p>This calculator is designed for planning and SEO content coverage. It does not replace licensed financial, tax, mortgage, or investment advice.</p>
+        <div class="related-links"><a href="interest-calculator.html">利息計算機</a><a href="exchange-calculator.html">為替計算機</a><a href="retirement-calculator.html">老後資金計算機</a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Financial Calculators</span><span>日本</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

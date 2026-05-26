@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loan Calculator | France</title>
+    <meta name="description" content="Estimate monthly loan payments, total interest, and total repayment cost.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="icon" href="../assets/favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://www.your-domain.com/fr-fr/loan-calculator.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-currency="EUR">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="../assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="interest-calculator.html">Interest</a>
+        <a aria-current="page" href="loan-calculator.html">Loan</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">France</p>
+        <h1>Loan Calculator</h1>
+        <p>Estimate monthly loan payments, total interest, and total repayment cost.</p>
+      </section>
+      <section class="calculator-layout">
+        <article class="tool-shell standalone">
+          <div class="panel-head"><div><h2>Loan Calculator</h2><p>Enter your assumptions and compare the estimate instantly.</p></div></div>
+          <form class="calculator-grid" data-calculator="loan">
+            <label>Loan amount<input name="amount" type="number" value="25000" step="0.01"></label>
+            <label>Annual rate (%)<input name="rate" type="number" value="8.5" step="0.01"></label>
+            <label>Years<input name="years" type="number" value="5" step="0.01"></label>
+            <label>Origination fee<input name="fee" type="number" value="250" step="0.01"></label>
+            
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card " data-result="loan-payment"><span>Monthly payment</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="loan-interest"><span>Total interest</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="loan-total"><span>Total cost</span><strong>$0</strong></output>
+          </div>
+        </article>
+        <aside class="side-panel"><h2>France</h2><p>This calculator is a planning estimate. Local taxes, fees, lender rules, inflation, and provider terms can change the real result.</p><p>Use it to compare scenarios before making a financial decision.</p></aside>
+      </section>
+      <section class="article-section">
+        <h2>How to use this calculator</h2>
+        <p>Adjust the inputs and review the result cards. For precise quotes, compare the estimate with local rules, providers, and professional advice.</p>
+        <div class="related-links"><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="interest-calculator.html">Interest Calculator</a><a href="retirement-calculator.html">Retirement Calculator</a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Financial Calculators</span><span>France</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

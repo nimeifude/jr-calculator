@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="48" viewBox="0 0 220 48" role="img" aria-labelledby="title">
+  <title id="title">Financial Calculators</title>
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="#0f7b5f"/>
+  <path d="M14 15h18v6H21v5h9v6h-9v9h-7V15Z" fill="#fff"/>
+  <path d="M33 30c0-6.5 4.6-11 11.2-11h1.1v6.5h-1.1c-2.7 0-4.5 1.7-4.5 4.5s1.8 4.5 4.5 4.5h1.1V41h-1.1C37.6 41 33 36.5 33 30Z" fill="#d8f4ea"/>
+  <text x="58" y="22" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#13211f">Financial</text>
+  <text x="58" y="39" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#0f7b5f">Calculators</text>
+</svg>

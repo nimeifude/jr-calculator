@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Salary Calculator | France</title>
+    <meta name="description" content="Estimate net monthly, biweekly, and hourly pay from annual salary assumptions.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="icon" href="../assets/favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://www.your-domain.com/fr-fr/salary-calculator.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-currency="EUR">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="../assets/logo.svg" alt="Financial Calculators"></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="mortgage-calculator.html">Mortgage</a>
+        <a href="interest-calculator.html">Interest</a>
+        <a aria-current="page" href="salary-calculator.html">Salary</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow dark">France</p>
+        <h1>Salary Calculator</h1>
+        <p>Estimate net monthly, biweekly, and hourly pay from annual salary assumptions.</p>
+      </section>
+      <section class="calculator-layout">
+        <article class="tool-shell standalone">
+          <div class="panel-head"><div><h2>Salary Calculator</h2><p>Enter your assumptions and compare the estimate instantly.</p></div></div>
+          <form class="calculator-grid" data-calculator="salary">
+            <label>Gross annual salary<input name="annual" type="number" value="85000" step="0.01"></label>
+            <label>Estimated tax (%)<input name="tax" type="number" value="24" step="0.01"></label>
+            <label>Retirement contribution (%)<input name="retirement" type="number" value="5" step="0.01"></label>
+            
+          </form>
+          <div class="result-grid" aria-live="polite">
+            <output class="result-card " data-result="salary-monthly"><span>Net monthly</span><strong>$0</strong></output>
+            <output class="result-card accent" data-result="salary-biweekly"><span>Net biweekly</span><strong>$0</strong></output>
+            <output class="result-card muted" data-result="salary-hourly"><span>Net hourly</span><strong>$0</strong></output>
+          </div>
+        </article>
+        <aside class="side-panel"><h2>France</h2><p>This calculator is a planning estimate. Local taxes, fees, lender rules, inflation, and provider terms can change the real result.</p><p>Use it to compare scenarios before making a financial decision.</p></aside>
+      </section>
+      <section class="article-section">
+        <h2>How to use this calculator</h2>
+        <p>Adjust the inputs and review the result cards. For precise quotes, compare the estimate with local rules, providers, and professional advice.</p>
+        <div class="related-links"><a href="mortgage-calculator.html">Mortgage Calculator</a><a href="interest-calculator.html">Interest Calculator</a><a href="retirement-calculator.html">Retirement Calculator</a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Financial Calculators</span><span>France</span></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
